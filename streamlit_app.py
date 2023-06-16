@@ -36,11 +36,11 @@ streamlit.header('Fruityvice Fruit advice !')
 try :
     #add textbox
     fruit_choice = streamlit.text_input('What fruit would you like information about?')
-     if not fruit_choice :
-        streamlit.error("Please select a fruit")     
-     else :
-        back_from_function = get_fruityvice_data(fruit_choice)
-        streamlit.dataframe(fruityvice_normalized)
+    if not fruit_choice :
+       streamlit.error("Please select a fruit")     
+    else :
+       back_from_function = get_fruityvice_data(fruit_choice)
+       streamlit.dataframe(fruityvice_normalized)
                 
 except URLError as e:
     streamlit.error()
