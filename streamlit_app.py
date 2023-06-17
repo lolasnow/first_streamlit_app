@@ -46,7 +46,7 @@ except URLError as e:
     streamlit.error()
 
 #reorga
-streamlit.stop()
+#streamlit.stop()
 
 streamlit.text("The fruit load list contains:")
 #Snowflake related functions
